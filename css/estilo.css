@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* COMIENZO GRID DE SECCIONES */
+
+.contenedorPrincipalIndex{
+    background-image: url(../img/Imagen3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10%;
+}
+
+.contenedorPrincipalMusica{
+    background-image: url(../img/Imagen8.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalShow{
+    background-image: url(../img/Imagen7.jpg);
+    background-size: cover;
+    background-position: left;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalHistoria{
+    background-image: url(../img/Imagen2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalContacto{
+    background-image: url(../img/Imagen5.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: grid;
+    grid-area: header;
+    align-items: center
+}
+
+main{
+    display: grid;
+    grid-area: main;
+}
+
+footer{
+    display: grid;
+    grid-area: footer;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+footer .buttons a{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    margin: 0 20px;
+    color: #F0A500;
+    text-decoration: none;
+}
+
+/* FIN GRID DE SECCIONES */
+
+/* COMIENZO MEDIA QUERIS */ 
+
+@media (min-width:10px){
+    .menuDesktop{
+        display: none;
+    }
+    .menuMobile{
+        display: grid;
+        justify-content: end;
+    }
+    .menuMobile a{
+        margin-right: 10px;
+        font-size: 30px;
+        color: #F0A500;
+        text-decoration: none;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        align-items:center;
+        color: #F0A500;
+        margin-top: 10%;
+    }
+    .conteinerParrafoMusica{
+        width: 90%;
+        margin: 10% auto;
+        color: #F0A500;
+        font-size: 25px;
+        text-align: justify;
+    }
+    .conteinerVideo{
+        margin: 0 auto;
+    }
+    .conteinerVideo iframe{
+        display: block;
+        width: 90%;
+        margin: 10% auto;
+    }
+    .conteinerShow{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .conteinerShow div{
+        color: white;
+    }
+    .conteinerShow h2{
+        letter-spacing: 5px;
+        font-size: 1.9em;
+        padding-bottom: 5px;
+    }
+    .conteinerShow h3{
+        font-size: 1.1em;
+        padding-bottom: 5px;
+    }
+    .conteinerShow a{
+        color: #F0A500;
+        font-size: 0.9em;
+        padding-bottom: 5px;
+        text-decoration: none;
+    }
+    .conteinerHistoria {
+        color: #F0A500;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .conteinerHistoria h2{
+        padding: 10px 0;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+    .conteinerParrafoHistoria{
+        margin-top: 5%;
+    }
+    .parrafoHistoria{
+        font-size: 20px;
+        padding-bottom: 25px;
+        text-align: justify;
+    }
+    .conteinerForm{
+        width: 90%;
+        margin: 5% auto;
+    }
+    .form{
+        color: #F0A500;
+        font-size: 20px;
+    }
+    input{
+        margin-left: 5px;
+        text-shadow: none;
+    }
+    .input{
+        height: 40px;
+        padding-left: 10px;
+        width: 100%;
+        box-shadow: 2px 2px 2px black;
+    }
+    .inputMensaje{
+        height: 80px;
+        padding-left: 10px;
+        width: 100%;
+        box-shadow: 2px 2px 2px black;
+        text-shadow: none;
+        padding-top: 10px;
+        margin: 10px auto;
+    }
+    .opcion{
+        text-shadow: none;
+    }
+    .form div{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .form input{
+        margin: 0 0;
+    }
+    .form h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .botones{
+        padding: 10px;
+        width: 100px
+    }
+}
+
+@media (min-width:576px){
+    header{
+        display: grid;
+        justify-content: normal;
+    }
+    .conteinerMenu ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .conteinerMenu ul li{
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: #F0A500;
+    }
+    header .menuDesktop{
+        display: block;
+    }
+    .menuMobile{
+        display: none;
+    }
+    .tituloMobile{
+        display: none;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        align-items:center;
+        color: #F0A500;
+        margin-top: 5%;
+    }
+    .conteinerHistoria{
+        width: 90%;
+    }
+    .conteinerParrafoMusica{
+        width: 80%;
+        margin: 0 auto;
+        color: #F0A500;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .conteinerVideo iframe{
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+    }
+}    
+
+@media (min-width:768px){
+    header{
+        display: grid;
+        justify-content: normal;
+        padding: 0 10%;
+    }
+    .conteinerMenu ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .conteinerMenu ul li{
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: #F0A500;
+    }
+    header .menuDesktop{
+        display: block;
+    }
+    .menuMobile{
+        display: none;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        align-items:center;
+        color: #F0A500;
+        margin-top: 5%;
+    }
+    .tituloMobile{
+        display: none;
+    }
+    .conteinerParrafoMusica{
+        width: 70%;
+        margin: 0 auto;
+        color: #F0A500;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .conteinerVideo{
+        margin: 0 auto;
+    }
+    .conteinerVideo iframe{
+        display: block;
+        width: 55%;
+        margin: 30px auto;
+    }
+    .conteinerHistoria{
+        width: 70%;
+    }
+    .conteinerShow{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    .conteinerShow div{
+        margin-bottom: 50px;
+        color: white;
+    }
+    .conteinerShow h2{
+        letter-spacing: 15px;
+        font-size: 40px;
+    }
+    .conteinerShow a{
+        color: #F0A500;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .conteinerForm{
+        width: 60%;
+        margin: 15px auto;
+    }
+    .form{
+        padding: 20px;
+        color: #F0A500;
+        width: 100%;
+        font-size: 20px;
+    }
+    input{
+        margin-left: 5px;
+        text-shadow: none;
+    }
+    .input{
+        height: 40px;
+        padding-left: 10px;
+        width: 100%;
+        box-shadow: 2px 2px 2px black;
+    }
+    .inputMensaje{
+        height: 80px;
+        padding-left: 10px;
+        width: 100%;
+        box-shadow: 2px 2px 2px black;
+        text-shadow: none;
+        padding-top: 10px;
+        margin: 10px auto;
+    }
+    .opcion{
+        text-shadow: none;
+    }
+    .form div{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .form input{
+        margin: 0 0;
+    }
+    .form h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .botones{
+        padding: 10px;
+        width: 100px;
+    }
+}
+
+/*FIN MEDIA QUERIS */ 
+
