@@ -1,0 +1,11 @@
+footer{
+    display: grid;
+    grid-area: footer;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    a{
+        font-size: 30px;
+        margin: 0 20px;
+    }
+}

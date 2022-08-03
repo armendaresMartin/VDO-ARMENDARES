@@ -1,0 +1,68 @@
+.contenedorPrincipalIndex{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(30,0,0,0.5)), url(../img/Imagen3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10%;
+}
+
+.contenedorPrincipalMusica{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(20,0,0,0.3)), url(../img/Imagen8.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalShow{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,20,0.5)), url(../img/Imagen7.jpg);
+    background-size: cover;
+    background-position: left;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalHistoria{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/Imagen2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.contenedorPrincipalContacto{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(10,0,0,0.5)), url(../img/Imagen5.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: 80px auto 10vh;
+}
+
+.z-index{
+    z-index: 1;
+}
