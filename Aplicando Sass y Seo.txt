@@ -1,0 +1,4 @@
+Aplique las etiqueta meta keywords y meta description en cada una de las secciones. 
+Comprimi las imagenes de fondo.
+Añadi un extend y un mixin en el main. 
+
