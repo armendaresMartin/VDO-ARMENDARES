@@ -1,12 +1,32 @@
 main{
-    h1{
+    .titulos{
         font-family: 'Nunito', sans-serif;
         font-family: 'Shrikhand', cursive;
         color: $color-principal;
-        letter-spacing: 4px;
-        text-shadow: 3px 3px 0px #8a2100;
+        @include fuentesParaTitulos;
+    }
+    .tituloSecundario{
+        @extend .titulos
     }
     .fechas{
         color: white;
+    }
+    .form{
+        background: rgba(59, 58, 58, 0.4);
+        border-radius: 7px;
+        padding: 0 20px;
+        margin-top: 2%;
+        .boton{
+            margin-bottom: 5%;
+        }
+    }
+    .sectionMusica{
+        margin-top: 2%;
+        .divParrafo{
+            margin-bottom: 10%;
+        }
+    }
+    .sectionHistoria{
+        margin-top: 2%;
     }
 }

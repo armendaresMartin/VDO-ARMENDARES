@@ -4,10 +4,11 @@ header{
     align-items: center;
     width: 100%;
     .navbar-nav{
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
+        align-items: center;
         strong{
             color: $color-principal;
             text-shadow: 1px 1px 0px #8a2100;

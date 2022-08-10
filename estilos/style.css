@@ -5,51 +5,31 @@
   color: #F0A500;
 }
 
-@media (min-width: 300px) {
-  .container {
-    height: 100%;
-  }
+@media (max-width: 576px) {
   h1 {
     display: flex;
     flex-direction: column;
     font-size: 30px;
     align-items: center;
     color: #F0A500;
-    margin-top: 5%;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) {
   header {
     display: grid;
     color: #F0A500;
-  }
-  header .navbar-nav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    align-items: center;
-    background: rgba(59, 58, 58, 0.9);
-  }
-  header .navbar-nav a {
-    font-size: 2em;
-  }
-  .container {
-    height: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 70%;
-    height: 100%;
   }
   .container-form {
     width: 55%;
   }
 }
 .contenedorPrincipalIndex {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 0, 0, 0.5)), url(../img/imagen3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 0, 0, 0.5)), url(../img/Imagen3.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -59,7 +39,7 @@
 }
 
 .contenedorPrincipalMusica {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 0, 0, 0.3)), url(../img/imagen10.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 0, 0, 0.3)), url(../img/Imagen8.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -79,7 +59,7 @@
 }
 
 .contenedorPrincipalHistoria {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/imagen12.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Imagen2.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -89,7 +69,7 @@
 }
 
 .contenedorPrincipalContacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(10, 0, 0, 0.5)), url(../img/imagen13.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(10, 0, 0, 0.5)), url(../img/Imagen5.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -109,11 +89,10 @@ header {
   width: 100%;
 }
 header .navbar-nav {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  align-items: center;
 }
 header .navbar-nav strong {
   color: #F0A500;
@@ -121,7 +100,7 @@ header .navbar-nav strong {
   justify-content: center;
 }
 
-main .titulos, main .tituloSecundario {
+main h1 {
   font-family: "Nunito", sans-serif;
   font-family: "Shrikhand", cursive;
   color: #F0A500;
@@ -130,24 +109,6 @@ main .titulos, main .tituloSecundario {
 }
 main .fechas {
   color: white;
-}
-main .form {
-  background: rgba(59, 58, 58, 0.4);
-  border-radius: 7px;
-  padding: 0 20px;
-  margin-top: 2%;
-}
-main .form .boton {
-  margin-bottom: 5%;
-}
-main .sectionMusica {
-  margin-top: 2%;
-}
-main .sectionMusica .divParrafo {
-  margin-bottom: 10%;
-}
-main .sectionHistoria {
-  margin-top: 2%;
 }
 
 footer {
@@ -170,16 +131,12 @@ footer a {
 @-webkit-keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
     transform: translateZ(300px);
-    -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(12px);
     transform: translateZ(12px);
-    -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
   }
@@ -187,19 +144,13 @@ footer a {
 @keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
     transform: translateZ(300px);
-    -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(12px);
     transform: translateZ(12px);
-    -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
