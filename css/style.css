@@ -40,12 +40,11 @@
   }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 70%;
-    height: 100%;
-  }
   .container-form {
-    width: 55%;
+    width: 80%;
+  }
+  .video {
+    margin: 0 20%;
   }
 }
 .contenedorPrincipalIndex {
@@ -79,7 +78,7 @@
 }
 
 .contenedorPrincipalHistoria {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/imagen12.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/imagen16.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -107,6 +106,7 @@ header {
   grid-area: header;
   align-items: center;
   width: 100%;
+  font-family: "DynaPuff", cursive;
 }
 header .navbar-nav {
   width: 100%;
@@ -125,11 +125,25 @@ main .titulos, main .tituloSecundario {
   font-family: "Nunito", sans-serif;
   font-family: "Shrikhand", cursive;
   color: #F0A500;
-  letter-spacing: 4px;
-  text-shadow: 3px 3px 0px #8a2100;
+}
+main .card {
+  background-color: rgba(59, 58, 58, 0.4);
+  margin-bottom: 2%;
+}
+main .col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 2%;
+}
+main .container-video {
+  margin: 3% 0;
 }
 main .fechas {
   color: white;
+  letter-spacing: 0.2em;
+}
+main .lugarFecha {
+  color: red;
 }
 main .form {
   background: rgba(59, 58, 58, 0.4);
@@ -142,9 +156,6 @@ main .form .boton {
 }
 main .sectionMusica {
   margin-top: 2%;
-}
-main .sectionMusica .divParrafo {
-  margin-bottom: 10%;
 }
 main .sectionHistoria {
   margin-top: 2%;
@@ -200,6 +211,10 @@ footer a {
     filter: blur(0);
     opacity: 1;
   }
+}
+.titulos, main .tituloSecundario {
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 0px #8a2100;
 }
 
 /*# sourceMappingURL=style.css.map */

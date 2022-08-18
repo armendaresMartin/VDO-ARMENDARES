@@ -3,13 +3,28 @@ main{
         font-family: 'Nunito', sans-serif;
         font-family: 'Shrikhand', cursive;
         color: $color-principal;
-        @include fuentesParaTitulos;
+    }
+    .card{
+        background-color: rgba(59, 58, 58, 0.4);
+        margin-bottom: 2%;
+    }
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 2%;
     }
     .tituloSecundario{
-        @extend .titulos
+        @extend .titulos;
+    }
+    .container-video{
+        margin: 3% 0;
     }
     .fechas{
         color: white;
+        letter-spacing: 0.2em;
+    }
+    .lugarFecha{
+        color: red;
     }
     .form{
         background: rgba(59, 58, 58, 0.4);
@@ -22,9 +37,6 @@ main{
     }
     .sectionMusica{
         margin-top: 2%;
-        .divParrafo{
-            margin-bottom: 10%;
-        }
     }
     .sectionHistoria{
         margin-top: 2%;

@@ -1,4 +1,7 @@
-@mixin fuentesParaTitulos {
+@mixin fuentess {
     letter-spacing: 4px;
     text-shadow: 3px 3px 0px #8a2100;
+}
+.titulos{
+    @include fuentess;
 }
