@@ -9,6 +9,10 @@
   .container {
     height: 100%;
   }
+  .container-musica {
+    width: 80%;
+    margin: 0 10%;
+  }
   h1 {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,10 @@
 @media (min-width: 992px) {
   .container-form {
     width: 80%;
+  }
+  .container-musica {
+    width: 80%;
+    margin: 0 10%;
   }
   .video {
     margin: 0 20%;
@@ -78,7 +86,7 @@
 }
 
 .contenedorPrincipalHistoria {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/imagen16.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/imagen12.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
