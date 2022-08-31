@@ -3,17 +3,20 @@ header{
     grid-area: header;
     align-items: center;
     width: 100%;
-    font-family: 'DynaPuff', cursive;
     .navbar-nav{
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
         align-items: center;
+        a:hover{
+            scale: 1.1;
+        }
         strong{
             color: $color-principal;
             text-shadow: 1px 1px 0px #8a2100;
-            justify-content:center;
+            justify-content: center;
+            font-family: 'Ubuntu', sans-serif;
         }
     }
 }

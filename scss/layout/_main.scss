@@ -19,12 +19,15 @@ main{
     .container-video{
         margin: 3% 0;
     }
+    .container-fechas{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
     .fechas{
         color: white;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
     }
     .lugarFecha{
-        color: red;
+        color: #f77b10;
     }
     .form{
         background: rgba(59, 58, 58, 0.4);
