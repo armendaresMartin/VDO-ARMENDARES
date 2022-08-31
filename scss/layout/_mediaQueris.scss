@@ -5,6 +5,7 @@
     .container-musica{
         width: 80%;
         margin: 0 10%;
+        padding: 0;
     }
     h1{
         display: flex;
@@ -33,6 +34,11 @@
             }
         }
     }
+    .video{
+        margin: 0 20%;
+        height: 250px;
+        width: 100%;
+    }
     .container{
         height: 100%;
     }
@@ -48,5 +54,7 @@
     }
     .video{
         margin: 0 20%;
+        height: 450px;
+        width: 100%;
     }
 }

@@ -12,6 +12,7 @@
   .container-musica {
     width: 80%;
     margin: 0 10%;
+    padding: 0;
   }
   h1 {
     display: flex;
@@ -39,6 +40,11 @@
   header .navbar-nav a {
     font-size: 2em;
   }
+  .video {
+    margin: 0 20%;
+    height: 250px;
+    width: 100%;
+  }
   .container {
     height: 100%;
   }
@@ -53,6 +59,8 @@
   }
   .video {
     margin: 0 20%;
+    height: 450px;
+    width: 100%;
   }
 }
 .contenedorPrincipalIndex {
@@ -76,7 +84,7 @@
 }
 
 .contenedorPrincipalShow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 20, 0.5)), url(../img/Imagen7.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 20, 0.6)), url(../img/Imagen7.jpg);
   background-size: cover;
   background-position: left;
   display: grid;
@@ -148,9 +156,6 @@ main .col-md-12 {
 }
 main .container-video {
   margin: 3% 0;
-}
-main .container-fechas {
-  background-color: rgba(0, 0, 0, 0.4);
 }
 main .fechas {
   color: white;
